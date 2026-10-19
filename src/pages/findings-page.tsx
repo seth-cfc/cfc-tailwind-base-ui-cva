@@ -232,9 +232,9 @@ export function FindingsPage() {
           </Alert>
           <CodeBlock code={sourceDirectiveCode} title="consumer app.css" />
           <Alert tone="warning" title="2. Where do tokens come from?">
-            Tokens here are hand-written in <InlineCode>index.css</InlineCode>. The existing{' '}
-            <InlineCode>cfc-tokens</InlineCode> repo could generate the <InlineCode>:root</InlineCode>{' '}
-            / <InlineCode>.dark</InlineCode> variables so that design and code share one source of truth.
+            Tokens here are hand-written in <InlineCode>index.css</InlineCode>. A design-token pipeline
+            could generate the <InlineCode>:root</InlineCode> / <InlineCode>.dark</InlineCode> variables
+            so that design and code share one source of truth.
           </Alert>
           <Alert tone="warning" title="3. Custom scales need tailwind-merge configuration">
             Semantic colors merge correctly as-is. Custom non-color scales do not, and the failure is

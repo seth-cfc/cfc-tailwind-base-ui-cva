@@ -119,7 +119,7 @@ const watch = [
 
 const decisions = [
   ['Distribution', 'npm package (consumers add an @source line) or copy-in like shadcn (manual upgrades)?'],
-  ['Tokens', 'Generate the CSS variables from cfc-tokens so design and code share one source?'],
+  ['Tokens', 'Generate the CSS variables from a design-token pipeline so design and code share one source?'],
   ['daisyUI', 'Layer it under CVA like SparkEd does, or keep full control of the variant API?'],
   ['className', "Allow Base UI's function form, or go string-only like SparkEd (simpler, and Next.js friendly)?"],
 ]
