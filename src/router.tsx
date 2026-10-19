@@ -7,6 +7,7 @@ import { NotFoundPage } from './pages/not-found-page'
 import { OverviewPage } from './pages/overview-page'
 import { NextjsPage } from './pages/nextjs-page'
 import { SparkedPage } from './pages/sparked-page'
+import { TldrPage } from './pages/tldr-page'
 import { TailwindPage } from './pages/tailwind-page'
 import { TogetherPage } from './pages/together-page'
 
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
     Component: AppLayout,
     children: [
       { index: true, Component: OverviewPage },
+      { path: 'tldr', Component: TldrPage },
       { path: 'tailwind', Component: TailwindPage },
       { path: 'base-ui', Component: BaseUiPage },
       { path: 'cva', Component: CvaPage },

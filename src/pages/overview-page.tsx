@@ -58,6 +58,7 @@ src/
 `
 
 const tour = [
+  { to: '/tldr', title: 'TL;DR', body: 'The two-minute version: verdict, one code sample per tool, open decisions.' },
   { to: '/tailwind', title: 'Tailwind CSS', body: 'Tokens, theming, state variants and the v4 CSS-first config.' },
   { to: '/base-ui', title: 'Base UI', body: 'Every primitive we wrapped, plus the styling hooks Base UI exposes.' },
   { to: '/cva', title: 'CVA', body: 'An interactive variant playground and the type-safety story.' },

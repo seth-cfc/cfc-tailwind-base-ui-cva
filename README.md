@@ -14,6 +14,7 @@ pnpm lint    # oxlint
 | Route       | What it covers                                                        |
 | ----------- | --------------------------------------------------------------------- |
 | `/`         | How the three layers split responsibilities; anatomy of one component |
+| `/tldr`     | Two-minute summary: verdict, short code samples, open decisions       |
 | `/tailwind` | CSS-first config, semantic tokens, dark mode, state variants          |
 | `/base-ui`  | Every wrapped primitive, the render prop, data attributes, CSS vars   |
 | `/cva`      | Variant playground, compoundVariants, types, tailwind-merge overrides |

@@ -6,6 +6,7 @@ import { Switch } from '../ui/switch'
 
 export const navItems = [
   { to: '/', label: 'Overview', end: true },
+  { to: '/tldr', label: 'TL;DR' },
   { to: '/tailwind', label: 'Tailwind CSS' },
   { to: '/base-ui', label: 'Base UI' },
   { to: '/cva', label: 'CVA' },
