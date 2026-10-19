@@ -9,6 +9,20 @@ pnpm build   # typecheck + production build
 pnpm lint    # oxlint
 ```
 
+## Highlights
+
+**CVA variant playground:** pick variants and watch the props, the rendered button and the exact class string CVA produces (`/cva`).
+
+![CVA variant playground](docs/images/cva-playground.gif)
+
+**Base UI overlays:** the dialog traps focus and returns it to the trigger on Escape; the menu moves its highlight with the arrow keys. No ARIA or focus code was written (`/base-ui`).
+
+![Base UI dialog and menu](docs/images/base-ui-overlays.gif)
+
+**One-class theming:** the dark mode switch flips `.dark` on `<html>`; tokens, components and the Shiki-highlighted code all follow (`/tldr`).
+
+![Dark mode toggle](docs/images/theme-toggle.gif)
+
 ## Routes
 
 | Route       | What it covers                                                        |
