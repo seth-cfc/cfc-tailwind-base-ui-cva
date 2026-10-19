@@ -62,6 +62,8 @@ const tour = [
   { to: '/base-ui', title: 'Base UI', body: 'Every primitive we wrapped, plus the styling hooks Base UI exposes.' },
   { to: '/cva', title: 'CVA', body: 'An interactive variant playground and the type-safety story.' },
   { to: '/together', title: 'Putting it together', body: 'A realistic form built only from library components.' },
+  { to: '/sparked', title: 'How SparkEd does it', body: 'The same stack plus daisyUI, as it ships in production today.' },
+  { to: '/nextjs', title: 'Using with Next.js', body: 'Server vs client components, PostCSS setup, and the buttonVariants gotcha.' },
   { to: '/findings', title: 'Findings & tradeoffs', body: 'What worked, what hurt, and open questions for the platform.' },
 ]
 
@@ -71,8 +73,9 @@ export function OverviewPage() {
       <PageHeader eyebrow="UI library prototype" title="Tailwind + Base UI + CVA">
         <p>
           A working prototype for evaluating this stack as the foundation of a shared platform UI
-          library. Each page covers one layer with live, editable examples. The last two pages show how
-          they combine and record what the experience was actually like.
+          library. Each page covers one layer with live, editable examples. The later pages show how
+          the layers combine, how SparkEd already uses them alongside daisyUI, and what the experience
+          was actually like.
         </p>
       </PageHeader>
 
@@ -136,7 +139,7 @@ export function OverviewPage() {
       </Section>
 
       <Section title="How this prototype is organized">
-        <CodeBlock code={projectTree} title="project structure" />
+        <CodeBlock code={projectTree} title="project structure" lang="text" />
         <Alert tone="info" title="Run it locally">
           <InlineCode>pnpm install</InlineCode> then <InlineCode>pnpm dev</InlineCode>. Toggle dark mode
           in the header: it flips one class on <InlineCode>&lt;html&gt;</InlineCode> and every token

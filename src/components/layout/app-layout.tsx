@@ -10,6 +10,8 @@ export const navItems = [
   { to: '/base-ui', label: 'Base UI' },
   { to: '/cva', label: 'CVA' },
   { to: '/together', label: 'Putting it together' },
+  { to: '/sparked', label: 'How SparkEd does it' },
+  { to: '/nextjs', label: 'Using with Next.js' },
   { to: '/findings', label: 'Findings & tradeoffs' },
 ] as const
 

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router'
 import { CodeBlock, InlineCode } from '../components/docs/code-block'
 import { Page, PageHeader, Section } from '../components/docs/page'
 import { Accordion, AccordionItem, AccordionPanel, AccordionTrigger } from '../components/ui/accordion'
@@ -240,11 +241,14 @@ export function FindingsPage() {
             silent.
           </Alert>
           <CodeBlock code={twMergeCode} />
-          <Alert tone="info" title="4. Compare against the DaisyUI + Base UI prototype">
-            The sibling <InlineCode>cfc-daisy-ui-and-base-ui</InlineCode> repo takes the opposite
-            approach: pre-built component classes from DaisyUI instead of our own CVA variants. Building
-            the same screen in both would make the tradeoff concrete: less code and faster start
-            versus full control of the variant API.
+          <Alert tone="info" title="4. daisyUI or not? SparkEd already answers this in production">
+            SparkEd layers daisyUI under CVA and isolates Base UI behind an adapter (see{' '}
+            <Link to="/sparked" className="font-medium text-primary underline underline-offset-2">
+              How SparkEd does it
+            </Link>
+            ). The sibling <InlineCode>cfc-daisy-ui-and-base-ui</InlineCode> prototype explores the
+            same direction. Building one screen both ways would make the tradeoff concrete: daisy&apos;s
+            ready vocabulary versus full control of the variant API.
           </Alert>
         </div>
       </Section>

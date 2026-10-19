@@ -18,6 +18,8 @@ pnpm lint    # oxlint
 | `/base-ui`  | Every wrapped primitive, the render prop, data attributes, CSS vars   |
 | `/cva`      | Variant playground, compoundVariants, types, tailwind-merge overrides |
 | `/together` | A realistic form + list built only from library components            |
+| `/sparked`  | How SparkEd combines the stack with daisyUI in production             |
+| `/nextjs`   | Porting the stack to the Next.js App Router (server/client boundary)  |
 | `/findings` | Scorecard, friction points and open decisions                         |
 
 ## Layout
